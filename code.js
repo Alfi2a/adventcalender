@@ -13,7 +13,7 @@ const messages = [
   "Remember, you are special 💛",
   "Have a cozy day ☕",
   "You are truly wonderful 🌸",
-  "Sending you a virtual hug 🤗",
+  "You are perfect 🤗",
   "Hope today brings you joy 🎁",
   "You are my favorite person 🌟",
   "Stay happy and cheerful 😊",
@@ -75,6 +75,7 @@ messages.forEach((msg, i) => {
 
     calendar.appendChild(door);
 });
+
 
 
 
