@@ -26,7 +26,7 @@ const messages = [
 ];
 
 const calendar = document.getElementById("calendar");
-const today = new Date(2025, 10, 15);
+const today = new Date();
 const currentDay = today.getMonth() === 11 ? today.getDate() : 0;
 
 messages.forEach((msg, i) => {
@@ -75,5 +75,6 @@ messages.forEach((msg, i) => {
 
     calendar.appendChild(door);
 });
+
 
 
