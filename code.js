@@ -73,8 +73,10 @@ calendar.appendChild(door);
 /* Countdown styling */
 .countdown {
   position: absolute;
-  bottom: 1vh;
+  bottom: 0.5vh;
+  left: 0;
   width: 100%;
+  display: block;
   text-align: center;
   font-size: clamp(0.6rem, 1.4vw, 1.2rem);
   color: #4b0000;
@@ -83,6 +85,12 @@ calendar.appendChild(door);
 
 /* Make the door number larger */
 .door span {
-  font-size: clamp(2rem, 5vw, 4rem);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: bold;
   z-index: 2;
+  display: block;
 }
