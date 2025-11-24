@@ -11,7 +11,7 @@ const messages = [
 
 const calendar = document.getElementById("calendar");
 const today = new Date();
-const currentDay = today.getMonth() === 11 ? today.getDate() : 0;
+const currentDay = today.getMonth() === 10 ? today.getDate() : 0;
 
 messages.forEach((msg, i) => {
   const door = document.createElement("div");
@@ -59,3 +59,4 @@ messages.forEach((msg, i) => {
 
   calendar.appendChild(door);
 });
+
