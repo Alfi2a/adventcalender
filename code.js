@@ -72,25 +72,26 @@ calendar.appendChild(door);
 });
 /* Countdown styling */
 .countdown {
-  position: absolute;
-  bottom: 0.5vh;
-  left: 0;
-  width: 100%;
-  display: block;
+  position: absolute !important;
+  bottom: 0.5vh !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: auto !important;
   text-align: center;
-  font-size: clamp(0.6rem, 1.4vw, 1.2rem);
+  font-size: clamp(0.7rem, 1.3vw, 1.1rem);
   color: #4b0000;
   pointer-events: none;
+  white-space: nowrap;
 }
 
 /* Make the door number larger */
 .door span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
   font-weight: bold;
   z-index: 2;
-  display: block;
+  pointer-events: none;
 }
